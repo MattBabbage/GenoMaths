@@ -1,0 +1,35 @@
+digraph{
+
+# Graph style
+"ordering"="out"
+"rankdir"="TD"
+
+#########
+# Nodes #
+#########
+
+"Add(Integer(-1), Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x'))))_()" ["color"="black", "label"="Add", "shape"="ellipse"];
+"Integer(-1)_(0,)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x')))_(1,)" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Float('0.90013193798162405', precision=53)_(1, 0)" ["color"="black", "label"="0.900131937981624", "shape"="ellipse"];
+"Pow(Symbol('x'), Integer(2))_(1, 1)" ["color"="black", "label"="Pow", "shape"="ellipse"];
+"Symbol('x')_(1, 1, 0)" ["color"="black", "label"="x", "shape"="ellipse"];
+"Integer(2)_(1, 1, 1)" ["color"="black", "label"="2", "shape"="ellipse"];
+"Add(Integer(-1), Symbol('x'))_(1, 2)" ["color"="black", "label"="Add", "shape"="ellipse"];
+"Integer(-1)_(1, 2, 0)" ["color"="black", "label"="-1", "shape"="ellipse"];
+"Symbol('x')_(1, 2, 1)" ["color"="black", "label"="x", "shape"="ellipse"];
+
+#########
+# Edges #
+#########
+
+"Add(Integer(-1), Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x'))))_()" -> "Integer(-1)_(0,)";
+"Add(Integer(-1), Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x'))))_()" -> "Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x')))_(1,)";
+"Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x')))_(1,)" -> "Float('0.90013193798162405', precision=53)_(1, 0)";
+"Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x')))_(1,)" -> "Pow(Symbol('x'), Integer(2))_(1, 1)";
+"Mul(Float('0.90013193798162405', precision=53), Pow(Symbol('x'), Integer(2)), Add(Integer(-1), Symbol('x')))_(1,)" -> "Add(Integer(-1), Symbol('x'))_(1, 2)";
+"Pow(Symbol('x'), Integer(2))_(1, 1)" -> "Symbol('x')_(1, 1, 0)";
+"Pow(Symbol('x'), Integer(2))_(1, 1)" -> "Integer(2)_(1, 1, 1)";
+"Add(Integer(-1), Symbol('x'))_(1, 2)" -> "Integer(-1)_(1, 2, 0)";
+"Add(Integer(-1), Symbol('x'))_(1, 2)" -> "Symbol('x')_(1, 2, 1)";
+}
