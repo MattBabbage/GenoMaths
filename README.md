@@ -3,6 +3,7 @@ Basis for a Genetic Algorithm to generate mathematical equations
 
 
 ##What does this algorithm do?
+
 **Step 1:**
 
 Generates a population of linked trees, each of which can be simplified into a mathematical equation
