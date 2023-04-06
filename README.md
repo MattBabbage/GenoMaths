@@ -2,7 +2,7 @@
 Basis for a Genetic Algorithm to generate mathematical equations
 
 
-##What does this algorithm do?
+## What does this algorithm do?
 
 **Step 1:**
 
