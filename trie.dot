@@ -1,0 +1,20 @@
+digraph trie { 
+	rankdir="TB"; 
+	node [shape = "circle"];
+	0 -> 1 [label = a];
+	1 -> 2 [label = b];
+	2 -> 3 [label = c];
+	2 -> 10 [label = d];
+	3 [shape = doublecircle];
+	3 -> 4 [label = d];
+	3 -> 7 [label = x];
+	4 -> 5 [label = e];
+	5 -> 6 [label = f];
+	6 [shape = doublecircle];
+	7 -> 8 [label = y];
+	8 -> 9 [label = z];
+	9 [shape = doublecircle];
+	10 -> 11 [label = e];
+	11 -> 12 [label = f];
+	12 [shape = doublecircle];
+}
