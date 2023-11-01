@@ -8,9 +8,9 @@ import numpy as np
 
 x, y = symbols("x,y")
 
-eq = x*x*x*x + x*x*x + x*x + x + 1
+eq = 2*x + 1
 df = []
-n_data_points = 100
+n_data_points = 30
 minval = -100
 maxval = 100
 
